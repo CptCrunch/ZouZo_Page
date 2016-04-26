@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Simply Me</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!-- Bootstrap / JQuery -->
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  	<!-- Google Font -->
+  	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  	<!-- CSS -->
+  	<style>
+  	body {
+	    font: 20px "Montserrat", sans-serif;
+	    line-height: 1.8;
+	    color: #f5f6f7;
+	}
+
+	p {font-size: 16px;}
+
+	.margin {margin-bottom: 45px;}
+
+  	.bg-1 { 
+		background-color: #e74c3c; /* Red */
+    	color: #ffffff;
+	}
+
+	.bg-2 { 
+    	background-color: #34495e; /* Dark Blue */
+   		color: #ffffff;
+	}
+
+	.bg-3 { 
+    	background-color: #ecf0f1; /* White */
+    	color: #555555;
+	}
+
+	.bg-4 { 
+	    background-color: #2f2f2f;
+	    color: #ffffff;
+	}
+
+	.container-fluid {
+    	padding-top: 70px;
+    	padding-bottom: 70px;
+	}
+
+	.navbar {
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	    border: 0;
+	    border-radius: 0;
+	    margin-bottom: 0;
+	    font-size: 12px;
+	    letter-spacing: 5px;
+	}
+
+	.navbar-nav li a:hover {
+	    color: #e74c3c !important;
+	}
+
+	.slideanim {visibility:hidden;}
+	.slide {
+	    /* The name of the animation */
+	    animation-name: slide;
+	    -webkit-animation-name: slide; 
+	    /* The duration of the animation */
+	    animation-duration: 1s; 
+	    -webkit-animation-duration: 1s;
+	    /* Make the element visible */
+	    visibility: visible; 
+	}
+
+	/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+	@keyframes slide {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translateY(70%);
+	    } 
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: translateY(0%);
+	    } 
+	}
+	@-webkit-keyframes slide {
+	    0% {
+	        opacity: 0;
+	        -webkit-transform: translateY(70%);
+	    } 
+	    100% {
+	        opacity: 1;
+	        -webkit-transform: translateY(0%);
+	    }
+	}
+  	</style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Who -->
+<div id="who" class="container-fluid bg-1 text-center">
+  	<h3>Who Am I?</h3>
+  	<img src="img\mypage\pic.png" class="img-responsive img-circle" style="display:inline" alt="Profile Picture">
+  	<h3>Just a normal dude</h3>
+</div>
+
+<!-- What -->
+<div id="what" class="container-fluid bg-2 text-center">
+  	<h3>What Am I?</h3>
+  	<p class="text-justify">I am helpful, diligent and work well under pressure. Personally, I love to work in a team but also I can work on my own. Programming is one of my most beloved hobbies and I am very good at it. I am reliable and I can handle criticism.</p>
+  	<a href="#" class="btn btn-default btn-lg">
+  		<span class="glyphicon glyphicon-search"></span> Search
+	</a>
+</div>
+
+<!-- Portfolio -->
+<div id="portfolio" class="container-fluid bg-3 text-center"> 
+  <h3>Portfolio</h3>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <p>Lorem ipsum..</p>
+      <img src="img\screenshots\test_screen.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>Lorem ipsum..</p>
+      <img src="img\screenshots\test_screen.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum..</p>
+      <img src="img\screenshots\test_screen.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="container-fluid bg-3">
+  	<h3 class="text-center">Contact</h3>
+	<br>
+  	<div class="row test">
+    	<div class="col-md-4">
+	        <p><span class="glyphicon glyphicon-map-marker"></span>Vienna, Austria</p>
+	        <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+	        <p><span class="glyphicon glyphicon-envelope"></span>Email: mariokerndler@gmail.com</p> 
+    	</div>
+    	<div class="col-md-8">
+      		<div class="row">
+        		<div class="col-sm-6 form-group">
+          			<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        		</div>
+        		<div class="col-sm-6 form-group">
+          			<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        		</div>
+      		</div>
+
+      		<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+
+ 		 	<div class="row">
+        		<div class="col-sm-12 form-group">
+          			<button class="btn btn-default pull-right" type="submit">Send</button>
+        		</div>
+
+      		</div> 
+    	</div>
+  	</div>
+</div>
+
+<footer class="container-fluid bg-4 text-center">
+  <p>Me Inc. &copy;</p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+}) 
+
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
