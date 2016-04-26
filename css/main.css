@@ -1,3 +1,8 @@
-body {
-    background-color: #9f60b9;
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* Colors from www.flatuicolors.com */
+ 
+.jumbotron {
+	background-color: #34495e; /* Wet Asphalt */
+	color: #ecf0f1; /* Clouds */
 }
